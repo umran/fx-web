@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	div.container
+		div.row.header
+			h1
+				|FX by Irukandji Labs
+			p Realtime Forex Rates
+		div.row
+			- var graph_names = ["EUR/USD","CAD/CHF","USD/JPY","CAD/JPY","GBP/USD","CHF/JPY","EUR/GBP","EUR/AUD","USD/CHF","EUR/CAD","EUR/JPY","EUR/NOK","EUR/CHF","EUR/NZD","USD/CAD","GBP/CAD","AUD/USD","GBP/CHF","GBP/JPY","NZD/JPY","AUD/CAD","NZD/USD","AUD/CHF","USD/NOK","AUD/JPY","USD/SEK","AUD/NZD"]
+			- for(i=0; i<graph_names.length; i++)
+				div(id="chart"+i)
+				h5(class="chart_label")= graph_names[i]
