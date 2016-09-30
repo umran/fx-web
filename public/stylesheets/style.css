@@ -11,6 +11,14 @@ a {
 	margin-bottom: 20px;
 }
 
-.chart_label {
+.chart-label {
 	text-align: center;
+}
+
+.logo-icon {
+	width: 128px;
+}
+
+.heading {
+	margin-top: 0px;
 }
